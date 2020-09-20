@@ -22,7 +22,7 @@ export default () => {
       correctAnswerCount += 1;
     } else {
       console.log(`"${answer}" is wrong answer ;(. Correct answer was "${correct}".\nLet's try again, ${name}!`);
-      correctAnswerCount = 0;
+      return;
     }
   }
   console.log(`Congratulations, ${name}!`);
